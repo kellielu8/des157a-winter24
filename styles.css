@@ -1,8 +1,21 @@
+/*CONTAINS WEBSITE*/
+#container {
+    width: 1200px;
+    height: 750px;
+}
+
+#mainSec {
+    height: 450px; 
+    width: 1200px;
+    background-color:  #fffbf0;
+
+}
+
 /*HEADER*/
 
 #banner {
-    max-width:1200px;
-    min-height:250px;
+    width:1200px;
+    height:250px;
     margin:auto;
     background-color: rgb(32, 88, 69);
     text-align:center;
@@ -30,10 +43,7 @@ header h2 {
 
 
 /*BODY*/
-#container {
-    max-width: 1200px;
-    max-height: 750px;
-}
+
 
 h2{
     font-family: 'Poppins', sans-serif;
@@ -47,8 +57,7 @@ body {
 }
 
 main{
-    height: 450px; 
-    background-color:  #fffbf0;
+    
     display:flex;
     justify-content:center;
     margin:auto;
@@ -114,7 +123,8 @@ footer {
     background-color: rgb(32, 88, 69);
     margin:auto;
     list-style-type:none;
-    padding:20px;
+    padding:0px;
+    height:50px;
     
 }
 
