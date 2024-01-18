@@ -73,39 +73,11 @@
     }
 }
 
-
-
-/*
-#banner:hover{
-    background: rgb(228,129,57);
-background: radial-gradient(circle, rgba(228,129,57,1) 0%, rgba(255,124,161,1) 100%);
-    animation: fadeIn 1s forwards;
+.banner:hover{
+    background-image:url(images/pond.jpg);
+    background-size:cover;
 }
 
-
-@keyframes fadeIn{
-    from {
-       opacity: 0;
-    }
-    to {
-       opacity: 1;
-    }
- }
- 
- @keyframes fadeOut{
-    from {
-       opacity: 1;
-    }
-    to {
-       opacity: 0;
-    }
- }
-
-header {
-    display:flex;
-    justify-content:center;
-}
-*/
 
 header h1 {
     margin:0;
@@ -116,10 +88,12 @@ header h1 {
     color: #fffbf0;
    
 }
-
+/*when you hover, header text changes colors and enlarges slightly*/
 h1:hover {
     color: #fa89a0;
     font-size:75px;
+    cursor:pointer;
+  
 }
 
 header h2 {
@@ -131,23 +105,32 @@ header h2 {
 
 }
 
-/*rotate image*/
-/*#fire {
+/*rotate image
+header{
+    display-flex;
+}
+
+#flower {
     position:relative;
     width:170px;
     height:170px;
-    animation-iteration-count: animation1 1s linear infinite;
+    animation-name:animation2;
+    animation-iteration-count: infinite;
+    transition-duration:2s;
 }
 
-@keyframes animation1{
+@keyframes animation2{
     0% {
         transform:rotate(0deg);
+    }
+    50% {
+        transform:rotate(180deg);
     }
     100% {
         transform:rotate(360deg);
     }
 }
-/*
+*/
 
 /*BODY*/
 
@@ -161,6 +144,7 @@ h2{
 body {
     font-family: 'Poppins', sans-serif;
     font-weight:400;
+    
 }
 
 main{
@@ -217,30 +201,35 @@ ul li a{
     background-color: #fffbf0;  
     padding: 5px;
     border-radius:8px;
+    font-size: 16px;
 }
 
 ul li a:hover {
     background-color:  #ddffef;  
-
+    cursor:pointer;
 }
 
 
 /*FOOTER*/
 footer {
+    color:#ddffef;
     background-color: rgb(32, 88, 69);
     margin:auto;
     list-style-type:none;
     padding:0px;
     height:50px;
-    
+    text-align:center;
+  
 }
 
-footer{
-    text-align:center;
+footer address {
+    padding-top:15px;
 }
 
 footer a{
-    font-family:'Russo One', sans-serif;
+    font-family:'Poppins', sans-serif;
+    font-weight:400;
     color:#ddffef;
     text-decoration:none;
+    padding-top:10px;
 }
