@@ -17,58 +17,57 @@
     width:1200px;
     height:250px;
     margin:auto;
-   /* background-color: rgb(32, 88, 69);*/
+    background-color: rgb(32, 88, 69);
     text-align:center;
     transition-duration:2s; 
     animation-iteration-count:infinite;
     animation-name:animation1;
     animation-duration:10s;
- 
 }
 
 @keyframes animation1 {
     0% {
-        background-image: url(images/duck1-01.png);
+        background-image: url(images/duck-02.png);
         background-size:cover;
     }
     10%{
-        background-image: url(images/duck1-02.png);
+        background-image: url(images/duck-02.png);
         background-size:cover;
     }
     20%{
-        background-image: url(images/duck1-03.png);
+        background-image: url(images/duck-03.png);
         background-size:cover; 
     } 
     30%{
-        background-image: url(images/duck1-04.png);
+        background-image: url(images/duck-04.png);
         background-size:cover;
     }
     45% {
-        background-image: url(images/duck1-05.png);
+        background-image: url(images/duck-05.png);
         background-size:cover;
     } 
     50% {
-        background-image: url(images/duck1-06.png);
+        background-image: url(images/duck-06.png);
         background-size:cover;
     }
     60% {
-        background-image: url(images/duck1-07.png);
+        background-image: url(images/duck-07.png);
         background-size:cover;
     }
     70% {
-        background-image: url(images/duck1-08.png);
+        background-image: url(images/duck-08.png);
         background-size:cover;
     }
     80% {
-        background-image: url(images/duck1-09.png);
+        background-image: url(images/duck-09.png);
         background-size:cover;
     }
     90% {
-        background-image: url(images/duck1-10.png);
+        background-image: url(images/duck-10.png);
         background-size:cover;
     }
     100% {
-        background-image: url(images/duck1-01.png);
+        background-image: url(images/duck-02.png);
         background-size:cover;
     }
 }
@@ -105,32 +104,28 @@ header h2 {
 
 }
 
-/*rotate image
+
 header{
-    display-flex;
+    display:flex;
 }
 
 #flower {
-    position:relative;
-    width:170px;
-    height:170px;
+    width:150px;
+    height:150px;
     animation-name:animation2;
     animation-iteration-count: infinite;
-    transition-duration:2s;
+    animation-duration:2s;
 }
 
 @keyframes animation2{
-    0% {
+    from {
         transform:rotate(0deg);
     }
-    50% {
-        transform:rotate(180deg);
-    }
-    100% {
+    to {
         transform:rotate(360deg);
     }
 }
-*/
+
 
 /*BODY*/
 
@@ -202,11 +197,13 @@ ul li a{
     padding: 5px;
     border-radius:8px;
     font-size: 16px;
+
 }
 
 ul li a:hover {
     background-color:  #ddffef;  
     cursor:pointer;
+    
 }
 
 
