@@ -17,15 +17,63 @@
     width:1200px;
     height:250px;
     margin:auto;
-    background-color: rgb(32, 88, 69);
+    
     text-align:center;
     transition-duration:2s; 
-    animation-iteration-count:infinite;
-    animation-name:animation1;
-    animation-duration:10s;
+    animation-iteration-count:animation1 10s infinite;
+    animation:colorAnimation 5s infinite alternate; 
 }
 
-@keyframes animation1 {
+#duck {
+    position:relative;
+    top:155px;
+    animation: duckMove 15s infinite;
+}
+
+@keyframes duckMove {
+    0% {
+        right:0px;
+    }
+    25% {
+        right: 240px;
+    }
+    50% {
+        right: 720px;
+
+    }
+    75%{
+        right: 960px;
+
+    }
+    100%{
+        right: 1200px;
+
+
+    }
+}
+
+@keyframes colorAnimation {
+    0% {
+        background-color:rgb(32, 88, 69);
+    }
+    25% {
+        background-color:rgb(68, 114, 98);
+
+    }
+    50% {
+        background-color:rgb(27, 126, 91);
+
+    }
+    75%{
+        background-color:rgb(46, 65, 58);
+
+    }
+    100%{
+        background-color:rgb(27, 85, 35);
+    }
+}
+
+/*@keyframes animation1 {
     0% {
         background-image: url(images/duck-02.png);
         background-size:cover;
@@ -71,6 +119,7 @@
         background-size:cover;
     }
 }
+*/
 
 .banner:hover{
     background-image:url(images/pond.jpg);
