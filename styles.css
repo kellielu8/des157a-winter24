@@ -22,7 +22,9 @@
     text-align:center;
     transition-duration:2s; 
     animation-iteration-count:animation1 10s infinite;
-    animation:colorAnimation 5s infinite alternate; 
+    animation:colorAnimation 5s infinite alternate;
+    overflow:hidden;
+
 }
 
 #duck {
@@ -33,7 +35,7 @@
 
 @keyframes duckMove {
     0% {
-        right:50px;
+        right:0px;
     }
     25% {
         right: 240px;
@@ -47,7 +49,7 @@
 
     }
     100%{
-        right: 1000px;
+        right: 1200px;
 
 
     }
@@ -74,53 +76,7 @@
     }
 }
 
-/*@keyframes animation1 {
-    0% {
-        background-image: url(images/duck-02.png);
-        background-size:cover;
-    }
-    10%{
-        background-image: url(images/duck-02.png);
-        background-size:cover;
-    }
-    20%{
-        background-image: url(images/duck-03.png);
-        background-size:cover; 
-    } 
-    30%{
-        background-image: url(images/duck-04.png);
-        background-size:cover;
-    }
-    45% {
-        background-image: url(images/duck-05.png);
-        background-size:cover;
-    } 
-    50% {
-        background-image: url(images/duck-06.png);
-        background-size:cover;
-    }
-    60% {
-        background-image: url(images/duck-07.png);
-        background-size:cover;
-    }
-    70% {
-        background-image: url(images/duck-08.png);
-        background-size:cover;
-    }
-    80% {
-        background-image: url(images/duck-09.png);
-        background-size:cover;
-    }
-    90% {
-        background-image: url(images/duck-10.png);
-        background-size:cover;
-    }
-    100% {
-        background-image: url(images/duck-02.png);
-        background-size:cover;
-    }
-}
-*/
+
 
 .banner:hover{
     background-image:url(images/pond.jpg);
@@ -135,8 +91,8 @@ header h1 {
     font-size: 70px;
     font-weight:400;
     color: #fffbf0;
-   
 }
+
 /*when you hover, header text changes colors and enlarges slightly*/
 h1:hover {
     color: #fa89a0;
