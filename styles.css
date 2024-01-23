@@ -33,7 +33,7 @@
 
 @keyframes duckMove {
     0% {
-        right:0px;
+        right:50px;
     }
     25% {
         right: 240px;
@@ -47,7 +47,7 @@
 
     }
     100%{
-        right: 1200px;
+        right: 1000px;
 
 
     }
