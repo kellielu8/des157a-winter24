@@ -9,7 +9,7 @@
 
 .banner {
     width:1200px;
-    height:400px;
+    height:300px;
     margin:auto;
     
     text-align:center;
@@ -22,7 +22,7 @@
 
 #cat {
     position:relative;
-    top:150px;
+    top:80px;
     animation: catMove 15s infinite;
 }
 
@@ -121,6 +121,17 @@ h2{
     color:#6a0fe1;
 }
 
+time {
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    color:#38b187;
+}
+
+#photo {
+    margin-top:18px;
+    text-align:center;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     font-weight:400;
@@ -129,17 +140,19 @@ body {
 main{
     background-color:#e9d9ff;
     display:flex;
-    flex-direction: column;
     justify-content:center;
     margin:auto;
     padding:20px;
-    gap:28px;
+    gap:50px;
 }
 
 article {
+    margin-top:25px;
     background-color: #fff5f5;
     padding:40px;
-
+    width:700px;
+    border-radius:10px;
+    
 }
 
 .entry {
