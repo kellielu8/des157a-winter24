@@ -1,22 +1,15 @@
 /*CONTAINS WEBSITE*/
 #container {
     width: 1200px;
-    height: 750px;
     margin:auto;
 }
 
-#mainSec {
-    height: 450px; 
-    width: 1200px;
-    background-color:  #fffbf0;
-
-}
 
 /*HEADER*/
 
 .banner {
     width:1200px;
-    height:250px;
+    height:400px;
     margin:auto;
     
     text-align:center;
@@ -27,13 +20,14 @@
 
 }
 
-#duck {
+#cat {
     position:relative;
-    top:155px;
-    animation: duckMove 15s infinite;
+    top:150px;
+    animation: catMove 15s infinite;
 }
 
-@keyframes duckMove {
+
+@keyframes catMove {
     0% {
         right:0px;
     }
@@ -55,40 +49,51 @@
     }
 }
 
+
 @keyframes colorAnimation {
     0% {
-        background-color:rgb(32, 88, 69);
+        background-color:rgb(39, 32, 88);
     }
     25% {
-        background-color:rgb(68, 114, 98);
+        background-color:rgb(104, 87, 212);
 
     }
     50% {
-        background-color:rgb(27, 126, 91);
+        background-color:rgb(35, 11, 191);
 
     }
     75%{
-        background-color:rgb(46, 65, 58);
+        background-color:rgb(34, 84, 116);
 
     }
     100%{
-        background-color:rgb(27, 85, 35);
+        background-color:rgb(43, 41, 147);
     }
 }
+
 
 header h1 {
     margin:0;
     padding-top:40px;
+    padding-left:20px;
     font-family:'Russo One', sans-serif;
     font-size: 70px;
     font-weight:400;
     color: #fffbf0;
+       
+}
+
+header h1 a{
+    text-decoration:none;
+    color:azure;
+   
 }
 
 /*when you hover, header text changes colors and enlarges slightly*/
-h1:hover {
-    color: #fa89a0;
+h1 a:hover {
+    color: #89faf2;
     cursor:pointer;
+    
   
 }
 
@@ -101,106 +106,57 @@ header h2 {
 
 }
 
-
 header{
     display:flex;
-}
-
-#flower {
-    width:150px;
-    height:150px;
-    animation-name:animation2;
-    animation-iteration-count: infinite;
-    animation-duration:2s;
-}
-
-@keyframes animation2{
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
+    justify-content:center;
+    height:400px;
 }
 
 
 /*BODY*/
 
-
 h2{
     font-family: 'Poppins', sans-serif;
     font-weight:600;
-    color:#273327;
+    color:#6a0fe1;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     font-weight:400;
-    
 }
 
 main{
-    
+    background-color:#e9d9ff;
     display:flex;
+    flex-direction: column;
     justify-content:center;
     margin:auto;
     padding:20px;
     gap:28px;
 }
 
-
-section {
-    padding-top:25px;
-    padding-bottom:25px;
-    padding-left: 45px;
-    padding-right: 45px;
-    border-radius:10px;
-}
-
-#sec1 {
-    background-color:#fad2d4;
-    box-shadow: 3px 1px 5px;
-    color: #a7cebc;
+article {
+    background-color: #fff5f5;
+    padding:40px;
 
 }
 
-#sec2 {
-    background-color: #eb946e;
-    box-shadow: 3px 1px 5px;
-    color: #a7cebc;
-
+.entry {
+    padding-bottom:20px;
 }
 
-#sec3 {
-    background-color:#fa89a0;
-    box-shadow: 3px 1px 5px;
-    color: #a7cebc;
+.button {
+    background-color:#cfaaff;
+    padding:10px;
+    text-decoration:none;
+    color:#1d1929;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
 }
 
-ul {
-    list-style-type: none; 
-    padding:0;
-    margin:0;
-}
-
-ul li {
-    margin-top:20px;
-}
-
-ul li a{
-    color:#361d2c;
-    text-decoration: none;   
-    background-color: #fffbf0;  
-    padding: 5px;
-    border-radius:8px;
-    font-size: 16px;
-
-}
-
-ul li a:hover {
-    background-color:  #ddffef;  
-    cursor:pointer;
-    
+.button:hover {
+    background-color:#8ceb89;
 }
 
 
