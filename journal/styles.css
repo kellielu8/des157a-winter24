@@ -25,6 +25,7 @@
     position:relative;
     top:80px;
     animation: catMove 15s infinite;
+    margin:auto;
 }
 
 

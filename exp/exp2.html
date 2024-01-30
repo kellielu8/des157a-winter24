@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+
+</head>
+<body>
+    
+    <main>
+        <h1>Experiment 2</h1>
+
+
+        <button onclick="changeBackgroundColor()">Change the Background Color!!</button>
+
+        <section>
+
+
+    
+        </section>
+    
+
+
+        <h2>Topic 1</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In eu mi bibendum neque egestas congue quisque. Nunc faucibus a pellentesque sit amet porttitor eget dolor morbi. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Consequat ac felis donec et. Commodo viverra maecenas accumsan lacus vel facilisis volutpat. Sit amet purus gravida quis. Sed blandit libero volutpat sed cras. </p>
+
+        <p>Id consectetur purus ut faucibus pulvinar elementum integer. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Id ornare arcu odio ut sem nulla pharetra diam sit. Tempor orci eu lobortis elementum nibh tellus molestie. At consectetur lorem donec massa sapien faucibus et molestie ac. Turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie. Vel pretium lectus quam id leo in vitae turpis. Vel pharetra vel turpis nunc eget. Interdum consectetur libero id faucibus nisl tincidunt. Interdum varius sit amet mattis vulputate enim.</p>
+
+
+        <h2>Topic 2</h2>
+
+        <p>Cras adipiscing enim eu turpis egestas pretium. Curabitur gravida arcu ac tortor. Aliquam sem fringilla ut morbi. Cursus in hac habitasse platea dictumst quisque sagittis purus sit. Eget est lorem ipsum dolor sit. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Augue ut lectus arcu bibendum. Eu facilisis sed odio morbi quis commodo odio aenean.</p>
+
+        <p>Adipiscing elit ut aliquam purus sit amet. Sed nisi lacus sed viverra tellus. Nisl vel pretium lectus quam id. Eu feugiat pretium nibh ipsum consequat nisl. Vulputate sapien nec sagittis aliquam malesuada bibendum. At risus viverra adipiscing at in tellus integer. Adipiscing elit ut aliquam purus.</p>
+
+
+        <h2>Topic 3</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In eu mi bibendum neque egestas congue quisque. Nunc faucibus a pellentesque sit amet porttitor eget dolor morbi. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Consequat ac felis donec et. Commodo viverra maecenas accumsan lacus vel facilisis volutpat. Sit amet purus gravida quis. Sed blandit libero volutpat sed cras. </p>
+
+        <p>Id consectetur purus ut faucibus pulvinar elementum integer. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Id ornare arcu odio ut sem nulla pharetra diam sit. Tempor orci eu lobortis elementum nibh tellus molestie. At consectetur lorem donec massa sapien faucibus et molestie ac. Turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie. Vel pretium lectus quam id leo in vitae turpis. Vel pharetra vel turpis nunc eget. Interdum consectetur libero id faucibus nisl tincidunt. Interdum varius sit amet mattis vulputate enim.</p>
+
+    </main>
+
+
+    <script>
+
+        //First, I played with prompts that allowed the user to adjust color.  The changeBackgroundColor function targets the body's background color.
+
+        function changeBackgroundColor() {
+            let color = prompt("Please enter a hex code", "#ffffff");
+            if (color !== null) {
+                document.body.style.backgroundColor = color;
+            }
+        }
+
+        //Second, I saw a tutorial on YouTube about accessing an array to make a list that you can add more items to.  The document query selector indicates where the list is produced.
+        const groceries = [
+            "Apples",
+            "Oranges",
+            "Milk",
+            "Chocolate chips",
+            "Bananas",
+            "Ice Cream",
+            "Butter",
+        ];
+
+        function makeGroceryList(arg) {
+            let items = "";
+            for (i=0; i<arg.length; i++) {
+                items += `<li> ${arg[i]} </li>`;
+            }
+
+            return items;
+        }
+
+        //accessing the function w/ the loop here to make an ordered/numbered list!
+        document.querySelector("section").innerHTML = 
+        `<ol>${makeGroceryList(groceries)} </ol>`;
+
+       
+
+    </script>
+
+
+</body>
+</html>
