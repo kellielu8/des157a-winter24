@@ -4,7 +4,7 @@
     console.log('reading js');
 
     const myForm = document.querySelector('form');
-    const myArticle = document.querySelector('#madlib');
+    const myArticle = document.querySelector('.madlib');
 
 
     myForm.addEventListener('submit', function(event) {
@@ -132,11 +132,19 @@
 
         //result
         else {
-            myText = `<img src=""><p>Hi, my name is ${maleName} (age ${num}), and I live in a ${building} in the heart of ${city}. I am currently a ${occupation} by day and a ${occupation2} by night. You might have also seen me on the hit reality TV show, ${tv}, where I co-starred with ${celebrity} and ${celebrity2}.  When I'm not ${verb} with my pet ${liquid}, I am drinking ${noun} while eating ${verb2}. I may have peaked in ${schooling}, but I am a great catch since many people describe me as ${adj}!</p>`;
+
+            myText = 
+            `<div>
+                <img src="images/toast1.png" width="400">
+                <h2>${maleName}, (${num})</h2>
+            </div>
+
+            <p>Hi, my name is ${maleName} (age ${num}), and I live in a ${building} in the heart of ${city}. I am currently a ${occupation} by day and a ${occupation2} by night. You might have also seen me on the hit reality TV show, ${tv}, where I co-starred with ${celebrity} and ${celebrity2}.  When I'm not ${verb} with my pet ${liquid}, I am drinking ${noun} while eating ${verb2}. I may have peaked in ${schooling}, but I am a great catch since many people describe me as ${adj}!</p>`;
         }
 
-        myArticle.innerHTML = myText;
-        myArticle.style.display = "block";
+        //UNCOMMENT THIS STUFF OUT AFTER STYLIZING
+        //myArticle.innerHTML = myText;
+       // myArticle.className = "showMadlib";
 
     });
 
