@@ -30,6 +30,10 @@ header h2 {
     padding:none;
 }
 
+.fas {
+    font-size:62px;
+}
+
 
 /*HEADER*/
 header {
@@ -99,7 +103,7 @@ main {
     color:rgb(64, 66, 38);
     position: absolute;
     bottom: -8px;
-    left: 182px;
+    left: 218px;
 }
 
 /*BIO*/
