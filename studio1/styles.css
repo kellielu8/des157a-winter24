@@ -9,7 +9,7 @@ body {
 }
 
 /*FONTS*/
-h1 {
+header h1 {
     font-family: 'Jomhuria', serif;
     font-weight: 400;
     font-size: 128px;
@@ -20,7 +20,7 @@ h1 {
     
 }
 
-h2 {
+header h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -46,7 +46,7 @@ header {
 main {
     background-color:#fedeff;
     padding:10px;
-    height:450px;
+    height:500px;
     position: relative;
 }
 
@@ -61,8 +61,6 @@ main {
     text-align:center;
 }
 
-
-
 .madlib {
     display:none;
 }
@@ -74,38 +72,104 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    height: 450px;
+    height: 500px;
     background-color: rgb(255, 211, 251);
     gap:40px;
 }
 
-.showMadlib p{
-    font-size:24px;
-    color:rgb(64, 66, 38);
-    background-color:rgb(252, 255, 217);
-    width:40%;
-    padding:15px;
-}
+/*PROFILE*/
 
-.showMadlib img {
+.showMadlib #toast {
     padding:30px;
     padding-bottom:75px;
     background-color:rgb(254, 255, 240);
     margin-top:15px;
-
+    margin-left: 58px;
 }
+
 .imageCont {
     position: relative;
 }
-.showMadlib h2 {
+
+
+.showMadlib h2 { /*This is the name and age on profile.*/
     font-family: 'Jomhuria', serif;
     font-weight: 400;
     font-size:44px;
     color:rgb(64, 66, 38);
     position: absolute;
-    bottom: -16px;
-    left: 30px;
-  
+    bottom: -8px;
+    left: 182px;
 }
+
+/*BIO*/
+.bioCont {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-right:45px;
+    padding:none;
+}
+
+.showMadlib p{
+    font-size:24px;
+    color:rgb(64, 66, 38);
+    background-color:rgb(254, 255, 240);
+    width:84%;
+    padding:30px;
+    margin-top:10;
+    margin-bottom:0;
+    border-radius:10px;
+}
+
+.showMadlib h3{
+    font-family: 'Jomhuria', serif;
+    font-weight: 400;
+    font-size:44px;
+    color:#cf3c5e;
+    margin-bottom:-30px;
+    margin-top:12px;
+}
+
+
+/*CHOOSING*/
+
+#choose {
+    display:flex;
+}
+
+
+/*This keyframe animation moves the loaf and toast*/
+#loafy:hover {
+    animation-name:animation1;
+    animation-iteration-count: infinite;
+    animation-duration:2s;
+}
+
+
+#toasty:hover {
+    animation-name:animation1;
+    animation-iteration-count: infinite;
+    animation-duration:2s;
+}
+
+@keyframes animation1{
+    0% {
+        transform:rotate(0deg);
+    }
+    25% {
+        transform:rotate(45deg);
+    }
+    50% {
+        transform:rotate(0deg);
+    }
+    75% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(0deg); 
+    }
+}
+
 
 
