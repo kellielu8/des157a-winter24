@@ -143,7 +143,7 @@
             <div class="bioCont">
 
                 <h3>Meet your match!</h3>
-                <p>Hi, my name is ${maleName} (age ${num}), and I live in a ${building} in the heart of ${city}. I am currently a ${occupation} by day and a ${occupation2} by night. You might have also seen me on the hit reality TV show, ${tv}, where I co-starred with ${celebrity} and ${celebrity2}.  When I'm not ${verb} with my pet ${liquid}, I am drinking ${noun} while eating ${verb2}. I may have peaked in ${schooling}, but I am a great catch since many people describe me as ${adj}!</p>
+                <p>Hi, my name is ${maleName} (age ${num}), and I live in a ${building} in the heart of ${city}. I am currently ${occupation} by day and ${occupation2} by night. You might have also seen me on the hit reality TV show, ${tv}, where I co-starred with ${celebrity} and ${celebrity2}.  When I'm not ${verb} with my pet ${noun}, I am drinking ${liquid} while eating ${solid}. I may have peaked in ${schooling}, but I am a great catch since many people describe me as ${adj}!</p>
             
                 <div id = "choose">
                     <img src="images/loafy.png" id="loafy" width="150">
