@@ -134,21 +134,28 @@
         else {
 
             myText = 
-            `<div>
-                <img src="images/toast1.png" width="400">
+            `
+            <div class="imageCont">
+                <img src="images/toast1.png" id="toast" width="360">
                 <h2>${maleName}, (${num})</h2>
             </div>
 
+            <div class="bioCont">
 
+                <h3>Meet your match!</h3>
                 <p>Hi, my name is ${maleName} (age ${num}), and I live in a ${building} in the heart of ${city}. I am currently a ${occupation} by day and a ${occupation2} by night. You might have also seen me on the hit reality TV show, ${tv}, where I co-starred with ${celebrity} and ${celebrity2}.  When I'm not ${verb} with my pet ${liquid}, I am drinking ${noun} while eating ${verb2}. I may have peaked in ${schooling}, but I am a great catch since many people describe me as ${adj}!</p>
             
-                <img src="images/loaftoast.png" width="400">
-            `;
+                <div id = "choose">
+                    <img src="images/loafy.png" id="loafy" width="150">
+                    <img src ="images/toasty.png" id="toasty" width = "150">
+                </div>
+            
+            </div>`;
         }
 
         //UNCOMMENT THIS STUFF OUT AFTER STYLIZING
-        //myArticle.innerHTML = myText;
-       // myArticle.className = "showMadlib";
+        myArticle.innerHTML = myText;
+        myArticle.className = "showMadlib";
 
     });
 

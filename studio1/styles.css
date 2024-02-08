@@ -61,8 +61,8 @@ main {
     gap:50px;
 }
 
-#button {
-    text-align:center;
+#button input {
+    margin:auto;
 }
 
 .madlib {
@@ -77,8 +77,12 @@ main {
     left: 0;
     width: 100%;
     height: 500px;
-    background-color: rgb(255, 211, 251);
+    background-color: #fedeff;
     gap:40px;
+}
+
+input {
+    display:block;
 }
 
 /*PROFILE*/
