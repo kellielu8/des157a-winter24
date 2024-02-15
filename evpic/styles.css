@@ -1,0 +1,48 @@
+body {
+    margin:auto;
+    padding: 0;
+    width: 1200px;
+    background-color:rgb(26, 22, 22);
+    color:aliceblue;
+    text-align:center;
+    
+
+}
+
+header h1 {
+    font-family: "K2D", sans-serif;
+    font-weight:700;
+    font-size: 120px;
+    padding: 20px;
+}
+
+header h2 {
+    font-family: "K2D", sans-serif;
+    font-weight:700;
+    font-size: 50px;
+}
+
+#boxy:hover {
+    animation-name:animation1;
+    animation-iteration-count: infinite;
+    animation-duration:2s;
+}
+
+@keyframes animation1{
+    0% {
+        transform:rotate(0deg);
+    }
+    25% {
+        transform:rotate(45deg);
+    }
+    50% {
+        transform:rotate(0deg);
+    }
+    75% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(0deg); 
+    }
+
+}
