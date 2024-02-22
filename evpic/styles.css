@@ -2,9 +2,18 @@ body {
     margin:auto;
     padding: 0;
     width: 1200px;
-    background-color:rgb(26, 22, 22);
-    color:aliceblue;
+    background-color:#c8ffff;
+    background-image:url(images/catvendingmachine.png);
+    background-size:70%;
+    background-repeat:no-repeat;
+    background-position-x: center;
+    background-position-y: 50px;
+
     text-align:center;
+    font-family: "K2D", sans-serif;
+    font-weight:700;
+    font-size: 22px;
+    color:rgb(23, 23, 104);
     
 
 }
@@ -12,37 +21,52 @@ body {
 header h1 {
     font-family: "K2D", sans-serif;
     font-weight:700;
-    font-size: 120px;
-    padding: 20px;
+    font-size: 64px;
+    color:#416cda;
+    margin-top: 20px;
+
 }
 
 header h2 {
     font-family: "K2D", sans-serif;
     font-weight:700;
-    font-size: 50px;
+    font-size: 28px;
+    padding:none;
+    margin-top:-40px;
+    color:#416cda;
 }
 
-#boxy:hover {
-    animation-name:animation1;
-    animation-iteration-count: infinite;
-    animation-duration:2s;
+button{
+    background-color: #7199FF;
+    color:azure;
+    font-family: "K2D", sans-serif;
+    font-weight:700;
+    font-size:18px;
+    stroke: none;
+    margin-top:240px;
+    padding:10px;
 }
 
-@keyframes animation1{
-    0% {
-        transform:rotate(0deg);
-    }
-    25% {
-        transform:rotate(45deg);
-    }
-    50% {
-        transform:rotate(0deg);
-    }
-    75% {
-        transform: rotate(-45deg);
-    }
-    100% {
-        transform: rotate(0deg); 
-    }
-
+#overlay {
+    position:absolute;
+    background-color: rgba(0,0,0,0.5);
+    top:0;
+    left:0;
+    width:100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
+
+.hidden {
+    visibility:hidden;
+    opacity:0;
+}
+
+.showing {
+    visibility: visible;
+    opacity:1;
+}
+
+

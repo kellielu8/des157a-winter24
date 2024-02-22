@@ -12,32 +12,44 @@
     <!--link the stylesheet-->
     <link href="styles.css" rel="stylesheet">
 
+    <!--link to jscript-->
+    <script src="script.js" defer></script>
 
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=K2D:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-
-
-
 </head>
 
 
 <body>
 
     <header>
-        <h1>Welcome to the Blind Box!</h1>
-        <h2>Click the box for a surprise.</h2>
+        <h1>Lucky Cat</h1>
+        <h2>Mystery Machine</h2>
 
     </header>
 
     <main>
-        <img src="images/box.png" alt="box" width="700" id="boxy">
-        
+
+       <button id="generateImageButton"> Click to get a mystery box! </button>
+
+       <p>When you want to open the box to see what item you got, click the box!</p>
+
+       <div>
+
+            <img src="images/plantbox.png"  id = "imgContainer" class="open" alt="plant box" width="400">
+
+        </div>
 
     </main>
 
+
+    <section id = "overlay" class="hidden">
+        <p id ="description">You got plant!</p>
+        <img src="images/plant.png" alt="plant" width="450" id="item">
+
+    </section>
 
     
 </body>
