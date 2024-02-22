@@ -4,7 +4,7 @@ body {
     text-align:center;
     font-family: "K2D", sans-serif;
     font-weight:700;
-    font-size: 13px;
+    font-size: 20px;
     color:rgb(23, 23, 104);
 
     transition-duration:2s; 
@@ -81,15 +81,19 @@ button:hover {
 
 #overlay {
     position:absolute;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(142, 82, 255, 0.9);
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
-    width:75vw;
+    width:55vw;
     height: 75vh;
     transition-property: opacity, visibility;
     transition-duration: 1s;
     transition-timing-function: ease;
+    display:flex;
+    align-items:center;
+    padding:20px;
+    border-radius: 8px;
 }
 
 .hidden {
@@ -100,6 +104,13 @@ button:hover {
 .showing {
     visibility: visible;
     opacity:1;
+}
+
+#description {
+    color:azure;
+    font-family: "K2D", sans-serif;
+    font-weight:700;
+    font-size:24px;
 }
 
 

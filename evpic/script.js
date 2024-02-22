@@ -8,7 +8,7 @@
 
     const items = ['images/buncat.png', 'images/icecreamcat.png', 'images/dog.png', 'images/panda.png', 'images/plant.png'];
 
-    const message = ['t0', 't1', 't2', 't3', 't4'];
+    const message = ['You got BUN CAT, a cat who loves to bake tasty pastries (not for you, but for himself).', 'You got ICE CREAM CAT, a cat who likes ice cream more than you.', 'You got POODLE, who looks like a chicken nugget from afar.', 'You got PANDA CAT, simply a cat dressed in a red panda costume.', 'You got GARDENIA SUCCULENT, a sweet little plant.'];
     let randoItemIndex = 0;
     console.log(randoItemIndex);
 
@@ -29,7 +29,7 @@
     function showItem(event) {
 
         document.getElementById('item').src= items[randoItemIndex];   
-        document.getElementById('description').innerHTML = message[randoItemIndex];
+        document.getElementById('description').innerHTML = message [randoItemIndex];
 
     }
 
@@ -50,28 +50,4 @@
 
    
 
-})();
-
-        // console.log('function showItem is working')
-        // // console.log('event target source: ' + event.target.src);
-        // console.log('image container source: ' + document.getElementById('imgContainer').src);
-        // if (images[0]) {
-        //     document.getElementById('item').src= "images/buncat.png";
-        //     document.getElementById('description').innerHTML = "You got bun cat!"
-        // } else if (images[1]) { 
-        //     document.getElementById('item').src= "images/icecreamcat.png";
-        //     document.getElementById('description').innerHTML = "You got ice cream cat!"
-        // } else if (images[5]) { 
-        //     document.getElementById('item').src= "images/plant.png";
-        //     document.getElementById('description').innerHTML = "You got a succulent!"
-        // }
-
-
-        // if (document.getElementById('imgContainer').src == "images/buncatbox.png"){
-        //     document.getElementById('item').src= "images/buncat.png";
-        // } 
-    
-
-
-//     
-//    document.querySelector('images/buncat.png').addEventListener('click',showItem)
+})(); //END
