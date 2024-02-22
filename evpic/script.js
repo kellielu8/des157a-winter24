@@ -9,25 +9,32 @@
     const items = ['images/buncat.png', 'images/icecreamcat.png', 'images/dog.png', 'images/panda.png', 'images/plant.png'];
 
     const message = ['t0', 't1', 't2', 't3', 't4'];
-
-    const randoItemIndex = Math.floor(Math.random() * boxes.length);
+    let randoItemIndex = 0;
     console.log(randoItemIndex);
 
-    //DISPLAY THE IMAGE OF THE BOX ON PAGE
+    //DISPLAY THE IMAGE OF THE BOX ON PAGE!
     function displayImage() {
-      
-        const imageUrl = images[randoItemIndex];
+        randoItemIndex = Math.floor(Math.random() * boxes.length);
+
+        const imageUrl = boxes[randoItemIndex];
         document.getElementById('imgContainer').src = imageUrl;
         console.log('image container source: ' + document.getElementById('imgContainer').src);
     }
 
     //IF USER CLICKS BUTTON, IMAGE DISPLAYS!
     document.getElementById('generateImageButton').addEventListener('click',displayImage);
+    
+
+    //SHOW ITEM FROM EACH BOX!
+    function showItem(event) {
+
+        document.getElementById('item').src= items[randoItemIndex];   
+        document.getElementById('description').innerHTML = message[randoItemIndex];
+
+    }
 
 
-    //OVERLAY: IF USER CLICKS IMAGE OF BOX, IT UNVEILS WHICH ITEM YOU GOT!
-
-
+    //OVERLAY - OPENS AND CLOSES
     document.querySelector('.open').addEventListener('click', function (event){
         event.preventDefault();
         document.getElementById('overlay').className = 'showing';
@@ -35,13 +42,13 @@
     showItem(event);
     });
 
-    //ASSIGNING EACH BOX W ITS ITEM!
-    function showItem(event) {
+    document.querySelector('.close').addEventListener('click', function (event){ 
+        event.preventDefault();
+        document.getElementById('overlay').className = 'hidden';
 
-        document.getElementById('item').src= items[randoItemIndex];   
-        document.getElementById('description').innerHTML = message[randoItemIndex];
+    });
 
-    }
+   
 
 })();
 
