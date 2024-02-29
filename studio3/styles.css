@@ -1,0 +1,70 @@
+
+#container {
+    width: 1200px;
+    height:750px;
+    background-image:url(images/stars.png);
+    margin:auto;
+    background-size:50%;
+
+}
+
+body {
+    color: rgb(215, 217, 250);
+    transition-duration:2s; 
+    animation:colorAnimation 5s infinite alternate;
+    overflow:hidden;
+
+    font-family:"Kiwi Maru", serif;
+    font-weight: 400;
+    font-size:14px;
+
+}
+
+h1 {
+    font-family: "Kumar One", serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: rgb(250, 255, 185);
+    padding:15px;
+
+}
+
+
+@keyframes colorAnimation {
+    0% {
+        background-color:#1b1a1e;
+    }
+    50% {
+        background-color:rgb(22, 20, 66);
+    }
+    100%{
+        background-color:rgb(31, 36, 53);
+    }
+}
+
+h1 {
+    text-align:center;
+}
+
+button {
+    background-color:bisque;
+    padding:10px;
+    border-radius: 10px;
+    border:none;
+
+}
+
+button:hover {
+    background-color:rgb(162, 255, 224);
+}
+
+
+#instructions {
+    width: 800px;
+    text-align:center;
+    margin:auto;
+}
+
+#gameControl {
+    margin:auto;
+}
