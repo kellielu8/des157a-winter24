@@ -24,6 +24,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet">
 
+     <!--fontawesome icons-->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
+
 </head>
 
 
@@ -31,28 +34,49 @@
 
     <main id="container">
 
+
         <h1>Froggy Fight of Fortune</h1>
 
+        
         <div id="instructions">
-            <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p> 
-
-            <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
+            <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins. Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
         </div>
+    
 
         <div id="gamecontrol">
-            <h2>Start a Game</h2>
-            <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+                <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
         </div>
-
-        <div id="game">
-            <img src="images/frog2.png" id="frog2" alt="frog2" width="400">
-        </div>
-
-
+    
+    
         <div id="actions"></div>
-        <div id="score"></div>
 
 
+
+        <section id = "layout">
+
+            <div id="character1">
+                <img src="images/pirate.png" id="frog1" alt="frog1" width="350">
+            </div>
+
+
+            <div id="game"></div>
+
+    
+            <div id="character2">
+                <img src="images/cowboy.png" id="frog2" alt="frog2" width="350">
+            </div>    
+    
+    
+            <div id="score1" class="scoreArea"> </div>
+
+            <div id="blank"></div>
+
+            <div id="score2" class="scoreArea"></div>
+
+        </section>
+
+
+        
     </main>
     
     

@@ -1,7 +1,6 @@
 
 #container {
     width: 1200px;
-    height:750px;
     background-image:url(images/stars.png);
     margin:auto;
     background-size:50%;
@@ -12,8 +11,6 @@ body {
     color: rgb(215, 217, 250);
     transition-duration:2s; 
     animation:colorAnimation 5s infinite alternate;
-    overflow:hidden;
-
     font-family:"Kiwi Maru", serif;
     font-weight: 400;
     font-size:14px;
@@ -26,6 +23,8 @@ h1 {
     font-size: 40px;
     color: rgb(250, 255, 185);
     padding:15px;
+    text-align:center;
+
 
 }
 
@@ -42,15 +41,15 @@ h1 {
     }
 }
 
-h1 {
-    text-align:center;
-}
 
 button {
     background-color:bisque;
     padding:10px;
-    border-radius: 10px;
+    border-radius: 5px;
     border:none;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -63,8 +62,42 @@ button:hover {
     width: 800px;
     text-align:center;
     margin:auto;
+    font-size:12px;
 }
 
-#gameControl {
+
+#game {
     margin:auto;
 }
+
+#game img {
+    width:90px;
+}
+
+#game img.large {
+    width:130px
+}
+
+#top {
+    padding:20px;   
+
+}
+
+#layout {
+    display:grid;
+    grid-template-columns: 400px 400px 400px;
+    align-items:end;
+}
+
+#actions {
+    display:flex;
+    justify-content: center;
+    padding:30px;
+}
+
+
+#gamecontrol {
+    padding:20px;
+}
+
+
