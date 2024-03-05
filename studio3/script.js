@@ -117,13 +117,22 @@
 
     function checkWinningCondition(){
         if(gameData.score[gameData.index] > gameData.gameEnd){
-            blank.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]}</h2>`;
+            winner.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]}</h2>`;
             actionArea.innerHTML = '';
             document.getElementById('quit').innerHTML = 'Start a new game';
             let myAudio = document.querySelector('#audio5')
             myAudio.play();
 
-            //overlay
+            //overlay here
+
+            document.getElementById('overlay').className = 'showing';
+
+            document.querySelector('.close').addEventListener('click', function (event){ 
+                event.preventDefault();
+                document.getElementById('overlay').className = 'hidden';
+            
+            });
+        
             
         } else {
             //show current score!
