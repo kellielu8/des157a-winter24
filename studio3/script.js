@@ -28,6 +28,9 @@
     startGame.addEventListener("click", function(){
         gameControl.innerHTML = '<h2>The Game Has Started</h2>';
         gameControl.innerHTML += '<button id="quit">Wanna Quit?   <i class="fas fa-times"></i></button>';
+        
+        let myAudio = document.querySelector('#audio1')
+        myAudio.play();
 
         document.getElementById('quit').addEventListener("click",function(){
             location.reload();
@@ -74,21 +77,28 @@
             game.innerHTML += '<p>Oh snap, snake eyes!</p>';
             gameData.score[gameData.index] = 0;
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
-            setTimeout(setUpTurn, 2000);
+            setTimeout(setUpTurn, 3000);
             showCurrentScore();
+            let myAudio = document.querySelector('#audio4')
+            myAudio.play();
         } 
         //if either die is a 1
         else if (gameData.roll1 === 1 || gameData.roll2 === 1){
             //console.log("one of the two dice was a 1");
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             game.innerHTML += `<p>One of your rolls was a one, switching to ${gameData.players[gameData.index]}</p>`;
-            setTimeout(setUpTurn, 2000);
+            setTimeout(setUpTurn, 3000);
+
+            let myAudio = document.querySelector('#audio3')
+            myAudio.play();
         } 
-        //if neither die is a 1 - winning points
+        //if neither die is a 1 - winning points!
         else {
             //console.log("the game proceeds");
             gameData.score[gameData.index]=gameData.score[gameData.index] + gameData.rollSum;
             actionArea.innerHTML = '<button id="rollagain">Roll Again</button> <button id="pass">Pass</button>';
+            let myAudio = document.querySelector('#audio2')
+            myAudio.play();
 
             document.getElementById('rollagain').addEventListener('click', function(){
                 setUpTurn();
@@ -107,11 +117,14 @@
 
     function checkWinningCondition(){
         if(gameData.score[gameData.index] > gameData.gameEnd){
-            score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]}</h2>`;
+            blank.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]}</h2>`;
             actionArea.innerHTML = '';
             document.getElementById('quit').innerHTML = 'Start a new game';
+            let myAudio = document.querySelector('#audio5')
+            myAudio.play();
 
             //overlay
+            
         } else {
             //show current score!
             showCurrentScore()
@@ -121,16 +134,8 @@
     function showCurrentScore(){
         score1.innerHTML = `<p>${gameData.players[0]} <br> <span> ${gameData.score[0]} lilypads  </span></p> `;
 
-        score2.innerHTML = `<p>${gameData.players[0]} <br> <span>The score is currently <strong>${gameData.players[1]} ${gameData.score[1]} lilypads  </span> </p>`;
+        score2.innerHTML = `<p>${gameData.players[0]} <br> <span> ${gameData.score[1]} lilypads  </span> </p>`;
     }
-
-   
-
-
-
-
-
-
 
 
 

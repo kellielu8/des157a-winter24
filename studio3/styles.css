@@ -100,4 +100,36 @@ button:hover {
     padding:20px;
 }
 
+#audio {
+    text-align:center;
+    color:#1b1a1e;
+}
 
+
+
+#overlay {
+    position:absolute;
+    background-color: rgba(142, 82, 255, 0.9);
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:55vw;
+    height: 75vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    display:flex;
+    align-items:center;
+    padding:20px;
+    border-radius: 8px;
+}
+
+.hidden {
+    visibility:hidden;
+    opacity:0;
+}
+
+.showing {
+    visibility: visible;
+    opacity:1;
+}
