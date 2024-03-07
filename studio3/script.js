@@ -117,7 +117,7 @@
 
     function checkWinningCondition(){
         if(gameData.score[gameData.index] > gameData.gameEnd){
-            winner.innerHTML = `${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} lilypads.`;
+            winner.innerHTML = `${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} lilypads!`;
 
             actionArea.innerHTML = '';
             document.getElementById('quit').innerHTML = 'Start a new game';
@@ -137,7 +137,7 @@
             
         } else {
             //show current score!
-            showCurrentScore()
+            showCurrentScore();
         }
     }
 
