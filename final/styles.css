@@ -91,6 +91,7 @@ h2{
 body {
     font-family: 'Poppins', sans-serif;
     font-weight:400;
+    
 }
 
 main{
@@ -104,10 +105,12 @@ main{
 }
 
 article {
-    margin-top:10px;
     background-color: #fff5f5;
     padding:40px;
     width:700px;
     border-radius:10px;
+    margin:auto;
+    margin-top:10px;
+
     
 }
