@@ -47,7 +47,18 @@
 
         
         <div id="instructions">
-            <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins. Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
+
+            <p>
+                <ul>
+                    <li>There are 2 players.</li>
+                    <li>Player who has the turn rolls the dice.</li>
+                    <li>Total of roll is added to current player's score unless player rolls a "one," lilypad with holes.</li>
+                    <li>Each time player earns points, they have a choice to roll again or pass their turn.</li>
+                    <li>If player rolls two "ones," current score turns to zero.</li>
+                    <li>First player to get 30 lilypads or higher WINS!</li>
+                </ul>    
+            </p>
+            <!-- <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins. Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p> -->
         </div>
     
 
@@ -85,9 +96,18 @@
         </section>
 
         <section id="overlay" class="hidden">
-            <p>Victory!</p>
-            <div id="winner"></div>
 
+            <div id="victory">
+                <p id="victorysub">Hurrah, a Victory!</p>
+
+                <div id="winner"></div>
+
+                <div>
+                    <img src="images/king.png" id="king" alt="king frog" width="750">
+                </div>
+
+            </div>
+    
         </section>
 
     </main>

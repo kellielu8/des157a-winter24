@@ -12,7 +12,7 @@
 
     const gameData = {
         dice: ['images/pad1.png', 'images/pad2.png', 'images/pad3.png', 'images/pad4.png', 'images/pad5.png', 'images/pad6.png'],
-        players: ['player 1', 'player 2'],
+        players: ['Player 1', 'Player 2'],
         score: [0, 0],
         roll1: 0,
         roll2: 0,
@@ -26,7 +26,7 @@
 
 
     startGame.addEventListener("click", function(){
-        gameControl.innerHTML = '<h2>The Game Has Started</h2>';
+        gameControl.innerHTML = '<h2>The Game Has Started:</h2>';
         gameControl.innerHTML += '<button id="quit">Wanna Quit?   <i class="fas fa-times"></i></button>';
         
         let myAudio = document.querySelector('#audio1')
@@ -117,7 +117,8 @@
 
     function checkWinningCondition(){
         if(gameData.score[gameData.index] > gameData.gameEnd){
-            winner.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]}</h2>`;
+            winner.innerHTML = `${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} lilypads.`;
+
             actionArea.innerHTML = '';
             document.getElementById('quit').innerHTML = 'Start a new game';
             let myAudio = document.querySelector('#audio5')
@@ -143,7 +144,7 @@
     function showCurrentScore(){
         score1.innerHTML = `<p>${gameData.players[0]} <br> <span> ${gameData.score[0]} lilypads  </span></p> `;
 
-        score2.innerHTML = `<p>${gameData.players[0]} <br> <span> ${gameData.score[1]} lilypads  </span> </p>`;
+        score2.innerHTML = `<p>${gameData.players[1]} <br> <span> ${gameData.score[1]} lilypads  </span> </p>`;
     }
 
 
