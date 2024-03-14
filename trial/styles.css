@@ -1,0 +1,196 @@
+/*OVERALL*/
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height:100vh;
+}
+
+h1 {
+    font-family: 'Jomhuria', serif;
+    font-weight: 400;
+    font-size: 110px;
+    color:#fff0f0;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+
+    font-weight: 700;
+    font-size: 24px;
+    color:#62084f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+/*SECTIONS*/
+section {
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    scroll-snap-align:start;
+    align-items:center;
+    gap:60px;
+   
+}
+
+.sec1 {
+    background-color:#FF94BB;
+    
+}
+
+
+.sec2 {
+    background-color: #FFCED6;
+ 
+}
+
+.sec3 {
+    background-color: #E2ABBF;
+}
+
+
+.sec4 {
+    background-color: #f15a92;
+}
+
+.sec5 {
+    background-color:#FFCED6;
+}
+
+
+/*FORM*/
+
+form {
+    padding:15px;
+}
+
+label {
+    color:rgb(67, 13, 48);
+}
+
+input {
+    color:#a82955;
+    background-color: #f1dfff;
+    border-color:#e45e8d;
+    border-radius:10px;
+    padding:10px;
+    margin-bottom:25px;
+    display:block; 
+    
+}
+
+input[type="text"] {
+    font-size: 16px;
+    
+}
+
+input[type="submit"] {
+    background-color:#a82955;
+    color:azure;
+    margin-top:20px;
+}
+
+#submitButton:hover {
+    background-color: #ee3377;
+}
+
+/*MADLIB*/
+
+
+.showMadlib {
+    display:flex;
+    justify-content:center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fedeff;
+    gap:40px;
+}
+
+/*PROFILE*/
+
+.showMadlib #toast {
+    padding:30px;
+    padding-bottom:75px;
+    background-color:rgb(254, 255, 240);
+    margin-top:15px;
+    margin-left: 58px;
+    height:450px;
+}
+
+.imageCont {
+    position: relative;
+}
+
+
+.showMadlib h2 { /*This is the name and age on profile.*/
+    font-family: 'Jomhuria', serif;
+    font-weight: 400;
+    font-size:44px;
+    color:rgb(64, 66, 38);
+    position: absolute;
+    bottom: 26px;
+    left: 198px;
+}
+
+.bioCont{
+    width:600px;
+}
+
+.results {
+    display:flex;
+}
+
+
+
+/*This keyframe animation moves the loaf and toast*/
+#loafy:hover {
+    animation-name:animation1;
+    animation-iteration-count: infinite;
+    animation-duration:2s;
+}
+
+
+#toasty:hover {
+    animation-name:animation1;
+    animation-iteration-count: infinite;
+    animation-duration:2s;
+}
+
+@keyframes animation1{
+    0% {
+        transform:rotate(0deg);
+    }
+    25% {
+        transform:rotate(45deg);
+    }
+    50% {
+        transform:rotate(0deg);
+    }
+    75% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(0deg); 
+    }
+}
+
+
+
+
+
+
+
