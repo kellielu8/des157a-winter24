@@ -32,6 +32,7 @@ h2 {
     box-sizing: border-box; 
 }
 
+/* main page */
 #firstarrow {
     margin-left: 460px;
     margin-top: 150px;
@@ -39,6 +40,7 @@ h2 {
     color:#ff2273;
 }
 
+/* standard pages */
 #secondarrow {
     margin-right:10px;
     margin-top: -245px;
@@ -46,8 +48,9 @@ h2 {
     color:#ff2273;
 }
 
+/* opp page */
 #thirdarrow {
-    margin-right:400px;
+    margin-right:10px;
     margin-top: -245px;
     font-size:28px;
     color:#ffcadf;
@@ -55,6 +58,11 @@ h2 {
 
 #firstquote {
     margin-left: -60px;
+    margin-bottom: -20px;
+}
+
+#secondquote {
+    margin-right: 100px;
     margin-bottom: -20px;
 }
 
