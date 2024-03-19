@@ -23,7 +23,7 @@ h2 {
 
     font-weight: 700;
     font-size: 24px;
-    color:#62084f;
+    color:#fff0f0;
 }
 
 * {
@@ -36,36 +36,49 @@ h2 {
 #firstarrow {
     margin-left: 460px;
     margin-top: 150px;
-    font-size:28px;
-    color:#ff2273;
+    font-size:30px;
+    color:#FFCED6;
 }
 
 /* standard pages */
 #secondarrow {
-    margin-right:10px;
-    margin-top: -245px;
-    font-size:28px;
+    margin-left:80px;
+    margin-bottom: 45px;
+    font-size:30px;
     color:#ff2273;
 }
 
 /* opp page */
 #thirdarrow {
-    margin-right:10px;
+    margin-left:80px;
     margin-top: -245px;
-    font-size:28px;
+    font-size:30px;
     color:#ffcadf;
 }
 
 #firstquote {
     margin-left: -60px;
-    margin-bottom: -20px;
+    margin-bottom: -30px;
+    color:#5d152e;
 }
 
 #secondquote {
-    margin-right: 100px;
-    margin-bottom: -20px;
+    margin-left: 147px;
+    margin-bottom: -40px;
+    color:#5d152e;
 }
 
+#thirdquote {
+    margin-left: 147px;
+    margin-bottom: -60px;
+    color:#5d152e;
+}
+
+#fourthquote {
+    margin-left: 147px;
+    margin-bottom: -40px;
+    color:#5d152e;
+}
 
 /*SECTIONS*/
 section {
@@ -80,7 +93,7 @@ section {
 }
 
 .sec1 {
-    background-color:#FF94BB;
+    background-color:#ff2273;
     
 }
 
