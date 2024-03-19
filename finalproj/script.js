@@ -139,14 +139,14 @@
         `<section id="results">
             <div class="imageCont">
                 <img src="images/toastf.png" id="toast" width="360">
-                <h2>${maleName}, (${num})</h2>
+                <h2 id="note">${maleName}, (${num})</h2>
             </div>
             
 
             <div class="bioCont">
 
                 <h3>Meet your match!</h3>
-                <p>Hi, my name is ${maleName} (age ${num}), and I live in a <strong>${building}</strong> in the heart of <strong>${city}</strong>. I am currently a <strong>${occupation}</strong> by day and a <strong>${occupation2}</strong> by night. You might have also seen me on the hit reality TV show, <strong>${tv}</strong>, where I co-starred with <strong>${celebrity}</strong> and <strong>${celebrity2}</strong>.  When I'm not <strong>${verb}</strong> with my pet <strong>${noun}</strong>, I am <strong>${verb2} ${liquid}</strong> while eating <strong>${solid}</strong>. I may have peaked in <strong>${schooling}</strong>, but I am a great catch since many people describe me as <strong>${adj}</strong>!</p>
+                <p>Hi, my name is <strong>${maleName}</strong> (age <strong>${num}</strong>), and I live in a <strong>${building}</strong> in the heart of <strong>${city}</strong>. I am currently a <strong>${occupation}</strong> by day and a <strong>${occupation2}</strong> by night. You might have also seen me on the hit reality TV show, <strong>${tv}</strong>, where I co-starred with <strong>${celebrity}</strong> and <strong>${celebrity2}</strong>.  When I'm not <strong>${verb}</strong> with my pet <strong>${noun}</strong>, I am <strong>${verb2} ${liquid}</strong> while eating <strong>${solid}</strong>. I may have peaked in <strong>${schooling}</strong>, but I am a great catch since many people describe me as <strong>${adj}</strong>!</p>
             
                 <div id = "choose">
                     <img src="images/loafy.png" id="loafy" width="150">
