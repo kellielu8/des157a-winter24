@@ -32,6 +32,32 @@ h2 {
     box-sizing: border-box; 
 }
 
+#firstarrow {
+    margin-left: 460px;
+    margin-top: 150px;
+    font-size:28px;
+    color:#ff2273;
+}
+
+#secondarrow {
+    margin-right:10px;
+    margin-top: -245px;
+    font-size:28px;
+    color:#ff2273;
+}
+
+#thirdarrow {
+    margin-right:400px;
+    margin-top: -245px;
+    font-size:28px;
+    color:#ffcadf;
+}
+
+#firstquote {
+    margin-left: -60px;
+    margin-bottom: -20px;
+}
+
 
 /*SECTIONS*/
 section {
@@ -133,7 +159,10 @@ input[type="submit"] {
 
 .imageCont {
     position: relative;
+    gap:15px;
 }
+
+
 
 
 .showMadlib h2 { /*This is the name and age on profile.*/

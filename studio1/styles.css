@@ -46,6 +46,10 @@ header {
 
 }
 
+.fas fa-arrow-down {
+    right: 100px;
+}
+
 /*MAIN CONTENT*/
 main {
     background-color:#fedeff;
@@ -177,6 +181,10 @@ input {
     100% {
         transform: rotate(0deg); 
     }
+}
+
+span {
+    font-weight:700px;
 }
 
 
