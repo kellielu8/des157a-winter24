@@ -14,13 +14,12 @@ body {
 h1 {
     font-family: 'Jomhuria', serif;
     font-weight: 400;
-    font-size: 110px;
+    font-size: 140px;
     color:#fff0f0;
 }
 
 h2 {
     font-family: 'Poppins', sans-serif;
-
     font-weight: 700;
     font-size: 24px;
     color:#fff0f0;
@@ -186,9 +185,6 @@ input[type="submit"] {
     border-radius: 10px;
 }
 
-
-
-
 .showMadlib h2 { /*This is the name and age on profile.*/
     font-family: 'Jomhuria', serif;
     font-weight: 400;
@@ -201,6 +197,9 @@ input[type="submit"] {
 
 .bioCont{
     width:600px;
+    background-color: #fff0f0;
+    padding:15px;
+    border-radius:8px;
 }
 
 .results {
@@ -244,7 +243,20 @@ input[type="submit"] {
     }
 }
 
+.floaty {
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 20px); }
+    100%   { transform: translate(0, -0px); }    
+}
 
 
 
