@@ -32,8 +32,14 @@ h2 {
 }
 
 /* main page */
+
+.fas {
+    color:#5d152e;
+    font-size:80px;
+}
+
+
 #firstarrow {
-    margin-left: 460px;
     margin-top: 150px;
     font-size:30px;
     color:#FFCED6;
@@ -92,8 +98,10 @@ section {
 }
 
 .sec1 {
-    background-color:#ff2273;
-    
+    background: rgb(255,130,160);
+    background: linear-gradient(0deg, rgba(255,130,160,1) 0%, rgba(255,38,119,1) 100%);
+    text-align:center;
+
 }
 
 
